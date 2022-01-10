@@ -53,8 +53,8 @@ const font = fontLoader.load(
 
     textGeometry.center()
 
-    const textMaterial = new THREE.MeshMatcapMaterial()
-    textMaterial.matcap = matcapTexture
+    const textMaterial = new THREE.MeshNormalMaterial()
+    // textMaterial.matcap = matcapTexture
     const text3D = new THREE.Mesh(
       textGeometry,
       textMaterial
